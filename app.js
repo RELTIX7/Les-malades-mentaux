@@ -11,7 +11,9 @@ root.innerHTML = `
 
 async function load(){
   try {
-    const res = await fetch('https://TON_URL_PTERODACTYL:3000/api/stats'); // ← Mets ici ton URL publique
+    // Fetch vers ton serveur Pterodactyl
+    const res = await fetch('https://node.silverhost.fr:2042/api/stats');
+    if(!res.ok) throw new Error('Erreur réseau');
     const s = await res.json();
     document.getElementById('content').innerHTML = `
       <h2>${s.name}</h2>
