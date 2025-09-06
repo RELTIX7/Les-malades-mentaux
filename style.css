@@ -1,0 +1,12 @@
+:root{--bg:#0b1020;--card:#0f1724;--accent:#7c3aed;--glass:rgba(255,255,255,0.03);--muted:#9aa4b2}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,Segoe UI,Roboto,Arial;background:linear-gradient(180deg,var(--bg),#030417);color:#e6eef8}
+.topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 20px;background:rgba(255,255,255,0.02);backdrop-filter:blur(6px)}
+.brand{font-weight:800;color:var(--accent);letter-spacing:0.6px}
+.container{max-width:1000px;margin:22px auto;padding:0 16px}
+.card{background:var(--card);padding:16px;border-radius:12px;margin-bottom:14px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+.muted{color:var(--muted);font-size:0.9rem}
+.members-grid{display:flex;flex-wrap:wrap;gap:10px}
+.member{width:120px;background:var(--glass);padding:10px;border-radius:10px;text-align:center}
+.member img{width:64px;height:64px;border-radius:50%;display:block;margin:0 auto 8px}
+button{background:var(--accent);color:white;border:0;padding:8px 10px;border-radius:8px;cursor:pointer}
+input{padding:8px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit;margin-right:8px}
